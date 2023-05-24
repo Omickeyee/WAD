@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+	body{
+		display:flex;
+		justify-content:center;
+	}
+	table, td, caption,textarea{
+		border: 1px solid;
+		border-spacing:5px;
+	}
+	
+	caption{
+		color:red;
+		background:yellow;
+	}
+	
+	td{
+		background-color:aqua;
+	}
+	
+	
+	
+</style>
+<body>
+    <table>
+    <caption>User Form</caption>
+    <form action=#>
+        <tr>
+            <td>Enter name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+        	<td>Enter address</td>
+        	<td><textarea name="address" cols="30"></textarea></td>
+        </tr>
+        <tr>
+        	<td>Select Game</td>
+        	<td>
+        		<input type="checkbox" name="game"><label>Hockey</label><br>
+        		<input type="checkbox" name="game"><label>Football</label><br>
+        		<input type="checkbox" name="game"><label>badminton</label><br>
+        		<input type="checkbox" name="game"><label>Cricket</label><br>
+        		<input type="checkbox" name="game"><label>Volleybol</label><br>
+        	</td>
+        </tr>
+        <tr>
+        	<td>Gender</td>
+        	<td>
+        		<input type="radio" name="gender"><label>Male</label><br>
+        		<input type="radio" name="gender"><label>Female</label><br>
+        	</td>
+        </tr>
+        <tr>
+        	<td>Select your age</td>
+        	<td>
+        		<select>
+        			<option value="Below 18">Below 18</option>
+        			<option value="18">18</option>
+        			<option value="Above 18">Above 18</option>
+        		</select>
+        	</td>
+        </tr>
+        <tr>
+        	<td colspan="2" align="center"><input type="file" name="file"></td>
+        </tr>
+        <tr>
+        	<td colspan="2" align="center" id="Final-buttons">
+		    	<input type="submit" value="Click Me">
+		    	<input type="submit" value="Reset">
+		    	<input type="submit" value="Submit Form">
+		    </td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>
